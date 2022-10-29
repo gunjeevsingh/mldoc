@@ -96,6 +96,10 @@ def risk_calc(symptoms):
 def home():
 	return render_template('index.html')
 
+@app.route('/frontuser')
+def frontuser():
+	return render_template('user.html')
+
 @app.route('/user', methods=['GET', 'POST'])
 def user():
 	if request.method == 'POST':
@@ -207,6 +211,9 @@ def login():
 def display(value):
 	return render_template('display.html', prediction=value)
 	
+@app.route('/userdisp')
+def userdisp():
+	return render_template('userdisp.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

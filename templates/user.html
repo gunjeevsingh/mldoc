@@ -59,7 +59,7 @@
 
         <div class="dumbass" height = '75%'>
           <div class=" form2">
-            <form action="{{ url_for('user') }}" method="POST" id='form1'>
+            <!-- <form action="" method="POST" id='form1'> -->
 
                 <input class="form-check-input maincheck" type="checkbox" value="patches" id="flexCheckDefault" name="user">
                 <label class="form-check-label" for="flexCheckDefault">
@@ -137,11 +137,12 @@
                   </label>
                   <br>
                   <br>
-                
-
-              <button type="submit" form="form1" class="btn btn-outline-secondary" class="last-button" statesearchbtn"
-              style="width: 25%;">Calculate</button>
-              </form>
+                <a href={{ url_for('userdisp') }}>
+                  <button  class="btn btn-outline-secondary" class="last-button" statesearchbtn"
+                  style="width: 25%;">Calculate</button></a>
+              <!-- <button type="submit" form="form1" class="btn btn-outline-secondary" class="last-button" statesearchbtn"
+              style="width: 25%;">Calculate</button> -->
+              <!-- </form> -->
               </div>
               
           </div>
