@@ -464,3 +464,10 @@ input::placeholder {
 .form .register-form {
   display: none;
 }
+
+.maincheck{
+  width : 50px;
+}
+.form2{
+  text-align: left;
+}
